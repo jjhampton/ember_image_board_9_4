@@ -1,0 +1,10 @@
+<form class="form-create-image">
+  <button class="button-show-form">+</button>
+  {{input class="input-add-URL" type="text" value=model.url placeholder="Image URL"}}
+  {{input class="input-add-caption" type="text" value=model.caption placeholder="Image Caption"}}
+  <div class="form-controls">
+    <button class="button-cancel">Cancel</button>
+    <button class="button-add" {{action 'save'}}>Add Image</button>
+  </div>
+</form>
+{{yield}}
