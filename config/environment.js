@@ -23,7 +23,7 @@ module.exports = function(environment) {
       'script-src': "'self'",
       'font-src': "'self'",
       'connect-src': "'self' api.parse.com",
-      'img-src': "'self'",
+      'img-src': "'self' lorempixel.com",
       'style-src': "'self'",
       'media-src': "'self'"
     }

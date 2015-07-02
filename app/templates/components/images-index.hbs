@@ -3,6 +3,9 @@
   <li class="image-show">
     <img class="image-URL" src="{{image.url}}">
     <p class="image-caption">{{image.caption}}</p>
+    {{#link-to 'images.show' image}}
+      {{image.url}}
+    {{/link-to}}
   </li>
 {{/each}}
 {{yield}}

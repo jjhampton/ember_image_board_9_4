@@ -8,6 +8,8 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   this.route('images', function() {
     this.route('create');
+    this.route('show', {path: '/:image_id'});
+    this.route('loading');
   });
 });
 
