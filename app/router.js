@@ -6,6 +6,16 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('landing', {path: '/'});
+
+  this.route('sessions', function() {
+    this.route('create');
+  });
+
+  this.route('users', function() {
+    this.route('create');
+  });
+
   this.route('images', function() {
     this.route('create');
     this.route('show', {path: '/:image_id'});
